@@ -1,0 +1,12 @@
+# Qt 忽略规则
+build-*/
+*.pro.user
+*.pro.user.*
+*.qrc~
+*.autosave
+*.log
+*.tmp
+*.o
+*.obj
+*.exe
+*.dll
