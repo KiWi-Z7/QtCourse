@@ -8,6 +8,7 @@
 #include    <QCoreApplication>
 #include    <Qlabel>
 #include    <QTextCharFormat>
+#include <QMessageBox>
 
 
 void QWMainWind::updateCurFile(QString aFile)
@@ -184,3 +185,11 @@ void QWMainWind::on_txtEdit_selectionChanged()
     ui->actFontBold->setChecked(fmt.font().bold()); //是否粗体
     ui->actFontUnder->setChecked(fmt.fontUnderline()); //是否有下划线
 }
+
+void QWMainWind::on_actAbout_triggered()
+{
+    QMessageBox::about(this, tr("关于"),
+            tr("<p>姓名：张三</p>"
+               "<p>学号：202400000000</p>"));
+}
+
